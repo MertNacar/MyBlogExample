@@ -1,0 +1,233 @@
+/* elementlerin kutu halini alması için yapıldı 
+padding ve margin işlemleri bu kutu içinde uygulanacak */
+* {
+    box-sizing: border-box;
+}
+/* elemenleri sola kaydırıp yataydakı uzunlukları 
+767px ve altındayken tek satır halinde olacak*/
+[class*="col-"] {
+    float: left; 
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Ekranın yataydaki uzunluğu 767 ve altındayken uygulanacak kodlar */
+@media only screen and (max-width: 767px){
+    
+
+    footer ul.footer, header ul.header{
+        height: max-content;
+    }
+
+}
+/* ekran görüntüsünün en az yatayda 768px iken 
+uygulanacak yatay uzunluk komutları. Bu komutlar Masaüstü için */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/* header */
+header{
+    background-image: url("https://i.hizliresim.com/g6ampL.jpg");   
+    height: max-content;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+div.header{
+    height: 374px;
+    top: 0px;
+    left: 0px; 
+}
+/* dikeyde yazı ortalama için line-height kulanıldı*/
+h1.row{
+    text-align: center;
+    line-height: 374px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+strong{
+    color: white;
+}
+/* yazı tipleri ve rengi */
+p, h3,h2,li{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    color: white;
+}
+/* header bitişi ve footer başlangıcı için çizgi*/
+div.line{
+    background-color: dodgerblue;
+    height: 4px;
+    width: 100%;
+}
+/*genel body özellikleri */
+body{
+    margin: 0px;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+div.gallery strong{
+    color: dodgerblue;
+}
+/* Liste görünümleri için */
+ul.header{
+    
+    margin: 0px;
+    background-color: #333;
+    padding: 0px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+    list-style-type: none;
+
+}
+
+ul.footer{
+    margin: 0px;
+    background-color: #333;
+    padding: 0px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+    list-style-type: none;
+
+}
+
+
+ul li{
+    text-transform: uppercase;
+    margin: -15px 0px;
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    color: dodgerblue;
+    
+}
+
+
+/* İmleç ile üstüne gelindiğinde değişecek olaylar */
+ul li a:hover{
+    color: white;
+    background-color: dodgerblue;
+}
+
+/* footer genel */
+footer{
+    color: dodgerblue;
+    height: max-content;
+    background-color: #333;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* arkaplan*/
+body div.backImage{
+    background-repeat: repeat-y;
+    background-image: url("https://i.hizliresim.com/moBvgy.jpg");
+}
+
+/* gölgelendirme ve çerçeveleme */
+div.articles-today,  div.gallery  {
+    background-color: #333;
+    border: 3px solid #333;
+    box-shadow: 5px 5px black;
+    margin: 40px;
+    
+}
+
+/* contact.html için ek css*/
+    a.mail{
+        color: dodgerblue;
+    }
+
+
+
+/* about.html için ek css*/
+
+
+div.row ul li{
+    color: white;
+}
+.about p{
+    color: white;
+}
+.about div.row strong{
+    color: dodgerblue;
+}
+
+.about div.gallery img{
+    padding: 0px;
+    border: solid 3px;
+    margin: 30px;
+    height: 180px;
+}
+.about div.gallery p{
+    margin-top:60px;
+}
+/* articles.html için ek css */
+
+
+
+.articles h2{
+    color: dodgerblue;
+}
+
+body.articles span{
+   margin: 40px;
+}
+
+.articles div.row img{
+    padding: 0px;
+    border: solid 3px;
+    margin: 50px;
+    height: 194px;
+}
+
+.articles div.row img:hover{
+    box-shadow: 6px 6px black;
+}
+
+.articles div.gallery p{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.articles div.gallery h3{
+    margin-top: 40px;
+    margin-left: 115px;
+    color: dodgerblue;
+    
+}
+
+.articles div.gallery div.line3{
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    height: 4px;
+}
