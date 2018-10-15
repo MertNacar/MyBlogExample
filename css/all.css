@@ -62,7 +62,10 @@ h1.row{
     padding: 0px;
     
 }
-
+div.header a{
+    color: black;
+    text-decoration: none;
+}
 strong{
     color: white;
 }
@@ -190,7 +193,6 @@ div.row ul li{
     margin-top:60px;
 }
 /* articles.html için ek css */
-
 
 
 .articles h2{
