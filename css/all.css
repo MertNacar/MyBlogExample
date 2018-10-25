@@ -24,6 +24,18 @@ padding ve margin işlemleri bu kutu içinde uygulanacak */
         height: max-content;
     }
 
+    body.articles div.row img{
+        margin: 0px;
+    }
+
+    body.articles div.gallery p{
+        margin-left: 20px;
+    }
+    
+    body.about div.gallery img{
+        margin: 0px;
+    }
+
 }
 /* ekran görüntüsünün en az yatayda 768px iken 
 uygulanacak yatay uzunluk komutları. Bu komutlar Masaüstü için */
